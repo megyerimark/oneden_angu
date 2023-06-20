@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div class="container">
+<div class="drop">
+  <div class="content">
+    <h2>Regisztráció</h2>
+    <form class="register" [formGroup]="form" (ngSubmit)="register()">
+      <div class="inputBox">
+        <input type="text"  placeholder="név" formControlName="name">
+      </div>
+      <div class="inputBox">
+        <input type="email"  placeholder="email" formControlName="email">
+      </div>
+      <div class="inputBox">
+        <input type="password"  placeholder="Jelszó"   formControlName="password">
+      </div>
+      <div class="inputBox">
+        <input type="password"  placeholder="Jelszó"   formControlName="confirm_password">
+      </div>
+      <div class="inputBox">
+      <button type="submit">Regisztráció</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+<a routerLink="/admin/login" class="btns">Belépés</a>
+<div class="btnsb">
+  TreCorte
+</div>
+
+</div>
+
+
+</body>
+</html>
