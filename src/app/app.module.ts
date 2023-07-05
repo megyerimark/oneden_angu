@@ -12,6 +12,7 @@ import { ResdatasComponent } from './Admin/resdatas/resdatas.component';
 import { RegisterComponent } from './Admin/register/register.component';
 import { ResComponent } from './res/res.component';
 import { InfoComponent } from './info/info.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InfoComponent } from './info/info.component';
     ResdatasComponent,
     RegisterComponent,
     ResComponent,
-    InfoComponent
+    InfoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
