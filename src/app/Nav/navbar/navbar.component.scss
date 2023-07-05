@@ -7,13 +7,21 @@ background: linear-gradient(45deg, #8efbff,#148ac5);
 height: 80px;
 
 }
-
+li{
+  margin: 5px;
+}
 ul a
 {
   color: white;
 }
-.dropdown-toggle:hover{
-
+.nav-item .dropdown-menu{
+  border: none;
+  background:#0067ac;
+  height: 130px;
+}
+.nav-item .dropdown-menu a:hover {
+  background:#3c9cdc;
+  border-radius: 5px;
 }
 a{
   color: #00008b;
