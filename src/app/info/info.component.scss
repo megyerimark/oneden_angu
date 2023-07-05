@@ -1,0 +1,22 @@
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 250px auto;
+  color: rgb(82, 82, 82);
+}
+i{
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+button{
+  margin-top: 20px;
+  border: none;
+  background:#79c5ff;
+  border-radius: 20px;
+  padding: 5px 20px;
+}
+button:hover{
+  background:#3fcfff;
+}

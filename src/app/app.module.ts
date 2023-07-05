@@ -11,6 +11,7 @@ import { LoginComponent } from './Admin/login/login.component';
 import { ResdatasComponent } from './Admin/resdatas/resdatas.component';
 import { RegisterComponent } from './Admin/register/register.component';
 import { ResComponent } from './res/res.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ResComponent } from './res/res.component';
     LoginComponent,
     ResdatasComponent,
     RegisterComponent,
-    ResComponent
+    ResComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
