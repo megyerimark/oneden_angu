@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ReservationService } from '../Shared/reservation.service';
 
 @Component({
   selector: 'app-res',
@@ -16,7 +17,7 @@ export class ResComponent {
   reservations: any;
     constructor(
       private router:Router,
-      private resService: NewType,
+      private resService: ReservationService,
       private http:HttpClient,
       private formBuild:FormBuilder){}
 
