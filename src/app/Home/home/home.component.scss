@@ -25,7 +25,7 @@ background: none;
   right: 3px;
   position: relative;
   color: #3076dfe4;
-  
+
 }
 #upButton:hover {
   background-color: #30d9dfdd;
@@ -50,8 +50,17 @@ flex-direction: column;
 padding: 20px;
 width: 60%;
 }
-.mainTitle .h1{
-  font-size: 100px;
+.mainTitle h1{
+  font-size: 10vw;
+
+}
+span.c1{
+  color: #ffff;
+
+}
+span.c2{
+  color: #30cedfe4;
+  text-shadow: -3px 0 #3076dfcf, 0 3px #3076dfcf, 3px 0 #3076dfcf, 0 -3px #3076dfcf;
 }
 
 .sectionOne button{
