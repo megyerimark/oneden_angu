@@ -1,43 +1,13 @@
-<app-navbar></app-navbar>
-<html lang="hu">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
 
 
-
-  <div class="contactForm">
-    <form [formGroup]="form" (ngSubmit)="reservation()">
-      <h2>üzenetet</h2>
-      <div class="inputBox">
-        <input type="text" formControlName="first_name" placeholder="Neved" required="required" />
-        <span>Neved</span>
+<div class="sectionOne" id="section1">
+  <div class="mainTitle">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur quaerat ipsum adipisci
+       officiis,tempore voluptatibus necessitatibus illum. Error, architecto reiciendis?</p>
+       <div class="mainButton">
+        <button routerLink="/reservation">Tovább</button>
       </div>
-      <div class="inputBox">
-        <input type="email" formControlName="email" placeholder="Email" required="required" />
-        <span>Email</span>
-      </div>
-      <div class="inputBox">
-        <input type="text" formControlName="phone_number" placeholder="Üzenet tárgya" required="required" />
-        <span>Üzenet tárgya</span>
-      </div>
-      <div class="inputBox">
-        <input type="datetime-local" formControlName="res_date" placeholder="Dátum" required="required" />
-        <span>Dátum</span>
-      </div>
-      <div class="inputBox">
-        <textarea class="inputFT" formControlName="messages" required="required" placeholder="Írj saját üzenetet"></textarea>
-        <span>Írj saját üzenetet</span>
-      </div>
-      <button type="submit" class="btn btn-outline-primary">Küldés</button>
-    </form>
   </div>
 
-
-
-
-</body>
-</html>
+  </div>
