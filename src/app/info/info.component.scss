@@ -10,13 +10,16 @@ i{
   margin-bottom: 20px;
   font-size: 30px;
 }
-button{
-  margin-top: 20px;
-  border: none;
-  background:#79c5ff;
-  border-radius: 20px;
-  padding: 5px 20px;
+
+ button{
+  border: 2px solid #30d9dfcf;
+  width: 200px;
+  border-radius: 30px;
+  margin: 10px;
+  background:none;
 }
 button:hover{
-  background:#3fcfff;
+  border: 2px solid #30d9dfcf;
+  background-color:  #3076dfcf ;
+  color: white;
 }
