@@ -1,14 +1,30 @@
-nav{
+ul{
   // background:url("/assets/fire.gif");
   // background-repeat: no-repeat;
   // background-size: cover;
-background: linear-gradient(45deg, #d97706,#92400e);
-
+/* background: linear-gradient(45deg, #d97706,#92400e); */
+background: linear-gradient(45deg, #8efbff,#148ac5);
+height: 80px;
 
 }
-nav a
+
+ul a
 {
   color: white;
+}
+.dropdown-toggle:hover{
+
+}
+a{
+  color: #00008b;
+}
+a:hover{
+  color: white;
+}
+[aria-current]:not([aria-current="false"]) {
+  background-color: #0067ac;
+  color: #8efbff;
+  font-weight: 600;
 }
 
 
@@ -26,7 +42,7 @@ nav a
 
 //}
 
-#as:hover{
+/* #as:hover{
   transform:scale(1.1);
 }
 #as{
@@ -53,4 +69,4 @@ nav a
   }
 
 
-}
+} */
