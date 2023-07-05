@@ -1,1 +1,29 @@
-<p>res works!</p>
+
+<div class="contactForm">
+  <form [formGroup]="form" (ngSubmit)="reservation()" class="m-5">
+    <h2>Foglalás</h2>
+    <div class="inputBox mt-4">
+      <span>Neved</span>
+      <input type="text" class="form-control" formControlName="first_name" placeholder="Neved" required="required" />
+    </div>
+    <div class="inputBox mt-3">
+      <span>Email</span>
+      <input type="email" class="form-control" formControlName="email" placeholder="Email" required="required" />
+    </div>
+    <div class="inputBox mt-3">
+      <span>Üzenet tárgya</span>
+      <input type="text" class="form-control" formControlName="phone_number" placeholder="Üzenet tárgya" required="required" />
+    </div>
+    <div class="inputBox mt-3">
+      <span>Dátum</span>
+      <input type="datetime-local" class="form-control" formControlName="res_date" placeholder="Dátum" required="required" />
+    </div>
+    <div class="inputBox mt-3">
+      <span>Írj saját üzenetet</span>
+      <textarea class="inputFT" class="form-control" formControlName="messages" required="required" placeholder="Írj saját üzenetet"></textarea>
+    </div>
+    <div class="text-center mt-3">
+      <button type="submit" class="btn btn-outline-primary">Küldés</button>
+    </div>
+  </form>
+</div>
