@@ -38,6 +38,7 @@ export class LoginComponent {
         this.auth.alogin(email,password).subscribe({
           next:res =>{
             if(res.success){
+              this.router.navigate(["admin/res"]);
               localStorage.setItem('currentAdmin',
                JSON.stringify({token: res.data.token, name: res.data.name}));
               // this.toastr.success('Üdvözöllek\n' + res.data.name)
@@ -47,6 +48,7 @@ export class LoginComponent {
                 imageWidth: 400,
                 imageHeight: 200,
               });
+
             }
 
           },

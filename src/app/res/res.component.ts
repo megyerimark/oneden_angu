@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ReservationService } from '../Shared/reservation.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-res',
@@ -50,12 +51,12 @@ export class ResComponent {
 
       this.resService.store(resData).subscribe({
         next:(data:any) => {
-          /* Swal.fire(
+          Swal.fire(
             'Sikeres Foglalás:',
             data.data.first_name ,
             'success'
           );
-          this.form.reset(); */
+          this.form.reset();
           console.log(data);
         },
         error:(err:any) => {
