@@ -286,3 +286,18 @@ form{
 .loginBtn{
  padding: 20px;
 }
+.input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.input i {
+  position: absolute;
+  right: 30%;
+
+/*   transform:  translateY(-0%); */
+}
+/* input:hover{
+  border: 4px solid #32e6da;
+} */
