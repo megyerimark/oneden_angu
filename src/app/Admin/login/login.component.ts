@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/Shared/Admin/auth.service';
 import Swal from 'sweetalert2';
@@ -27,8 +27,8 @@ export class LoginComponent {
     private router: Router,) { }
     ngOnInit(): void {
       this.form = this.formBuilder.group({
-        email:['', Validators.required],
-        password: ['', Validators.required]
+        email: new FormControl('',[ Validators.required, Validators.email]),
+        password: new FormControl('',[ Validators.required])
       });
       }
       alogin(){
@@ -57,7 +57,7 @@ export class LoginComponent {
               title: 'Hoppá!...',
               text: 'Sikertelen bejelentkezés!',
               confirmButtonColor: '#30d9dfcf',
-              
+
             })
 
           }

@@ -47,18 +47,16 @@
 <div class="loginForm">
   <div class="loginBg">
     <div class="logo">
-<!--       <img src="assets/onedentLogo.png" alt=""> -->
       <h1>Bejelentkezés</h1>
     </div>
-      <form (ngSubmit)="alogin()" action="" class="needs-validation" novalidate>
+      <form [formGroup]="form" (ngSubmit)="alogin()" action="" >
         <div class="input mt-3">
-          <input type="email" class="form-control" placeholder="Email" value="as" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email" required>
+          <span *ngIf="form.controls['email'].errors?.['required']">Email cím megadása kötelező</span>
         </div>
         <div class="input mt-3">
-          <input type="password" class="form-control" placeholder="Jelszó" required>
+          <input type="password" class="form-control" id="password" placeholder="Jelszó" formControlName="password" required>
+          <span *ngIf="form.controls['password'].errors?.['required']">jelszó megadása kötelező</span>
         </div>
         <div class="d-grid gap-2 mt-4 loginBtn text-centerel">
           <button type="submit" class="btn btn-dark">Belépés</button>
