@@ -289,13 +289,16 @@ form{
   margin: 30px auto;
 }
 .loginBtn{
- padding: 20px;
+/*  padding: 20px; */
 }
 .input{
   display: flex;
   justify-content: center;
   align-items: center;
   background: transparent;
+}
+input{
+  border-radius: 30px;
 }
 img
 {
@@ -307,7 +310,7 @@ img
  button{
   border: 2px solid #30d9dfcf;
   border-radius: 30px;
-  margin: 10px;
+ /*  margin: 20px; */
   background-color: #3076dfcf;
 }
 button:hover{
