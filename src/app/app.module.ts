@@ -13,6 +13,7 @@ import { RegisterComponent } from './Admin/register/register.component';
 import { ResComponent } from './res/res.component';
 import { InfoComponent } from './info/info.component';
 import { FooterComponent } from './footer/footer.component';
+import { AdminbarComponent } from './Admin/adminbar/adminbar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     RegisterComponent,
     ResComponent,
     InfoComponent,
-    FooterComponent
+    FooterComponent,
+    AdminbarComponent
   ],
   imports: [
     BrowserModule,
