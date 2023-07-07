@@ -1,0 +1,24 @@
+.navbar{
+  background: linear-gradient(45deg, #8efbff,#148ac5);
+  text-decoration: none;
+}
+#left a{
+  color: #005383;
+  font-weight: 500;
+}
+#left a:hover{
+  color: #ffffff;
+  font-weight: 500;
+}
+#left li:hover{
+  background-color: #0077d8;
+  border-radius: 20px;
+}
+#right a{
+  color: #ffffff;
+  font-weight: 500;
+}
+.logout:hover{
+  background-color: #0077d8;
+  border-radius: 20px;
+}
