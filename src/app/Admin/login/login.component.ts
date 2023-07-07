@@ -43,10 +43,8 @@ export class LoginComponent {
                JSON.stringify({token: res.data.token, name: res.data.name}));
               // this.toastr.success('Üdvözöllek\n' + res.data.name)
               Swal.fire({
-                text: 'Sikeres Bejelentkezés.',
-                imageUrl: 'https://c4.wallpaperflare.com/wallpaper/32/804/961/spirit-blossom-yasuo-yasuo-league-of-legends-league-of-legends-riot-games-hd-wallpaper-preview.jpg',
-                imageWidth: 400,
-                imageHeight: 200,
+                text: 'Sikeres bejelentkezés.',
+                color: '#30d9dfcf',
               });
 
             }
@@ -55,8 +53,11 @@ export class LoginComponent {
           error:err =>{
             Swal.fire({
               icon: 'error',
+              iconColor:'#3076dfcf',
               title: 'Hoppá!...',
-              text: 'Sikertelen bejelentkezés!'
+              text: 'Sikertelen bejelentkezés!',
+              confirmButtonColor: '#30d9dfcf',
+              
             })
 
           }
