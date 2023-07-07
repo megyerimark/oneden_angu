@@ -45,6 +45,7 @@ export class LoginComponent {
               Swal.fire({
                 text: 'Sikeres bejelentkezés.',
                 color: '#30d9dfcf',
+                confirmButtonColor: '#30d9dfcf',
               });
 
             }
