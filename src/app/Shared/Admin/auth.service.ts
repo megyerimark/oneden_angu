@@ -44,23 +44,23 @@ export class AuthService {
     return this.http.post<any>(url,regdata,httpOption)
   }
 
-  logout(){
-    if(localStorage.getItem('currentAdmin') === null){
-      return;
+  logout(email:string, token:string){
+    let authData =
+    {
+      email: email,
+      token: token
     }
-    let data:any = localStorage.getItem('currentAdmin');
-    localStorage.removeItem('currentAdmin');
-    let currentUser = JSON.parse(data);
-    let token = currentUser.token;
-    let httpHeaders = new HttpHeaders();
-    httpHeaders.set('Content-Type', 'application/json');
+    let headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + token
+    });
 
-    const httpOptions = {
-      headers: httpHeaders
-    }
+    let httpOptions = {
+      headers: headers
+    };
     let endpoint = 'logout';
     let url = this.host + endpoint;
-    return this.http.post<any>(url, httpOptions);
+    return this.http.post<any>(url, authData, httpOptions);
 }
 isLoggedIn(){
   if(localStorage.getItem('currentAdmin') === null){

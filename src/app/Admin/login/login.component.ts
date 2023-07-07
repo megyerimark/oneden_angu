@@ -65,12 +65,5 @@ export class LoginComponent {
         });
       }
 
-      logout(){
-        this.auth.logout();
-        this.router.navigate(['admin/login']);
-
-
-      }
-
 
 }
