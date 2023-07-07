@@ -295,10 +295,14 @@ form{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: transparent;
 }
 input{
   border-radius: 30px;
+}
+input:hover{
+  border: 5px solid rgba(0, 255, 247, 0.491);
 }
 img
 {
@@ -317,4 +321,8 @@ button:hover{
   border: 2px solid #30d9dfcf;
   background-color:  #30d9dfcf ;
   color: white;
+}
+span{
+  color: rgb(53, 255, 215);
+  font-weight: 600;
 }
