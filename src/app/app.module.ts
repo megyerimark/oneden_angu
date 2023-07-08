@@ -14,6 +14,7 @@ import { ResComponent } from './res/res.component';
 import { InfoComponent } from './info/info.component';
 import { FooterComponent } from './footer/footer.component';
 import { AdminbarComponent } from './Admin/adminbar/adminbar.component';
+import { ProfilComponent } from './Admin/profil/profil.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AdminbarComponent } from './Admin/adminbar/adminbar.component';
     ResComponent,
     InfoComponent,
     FooterComponent,
-    AdminbarComponent
+    AdminbarComponent,
+    ProfilComponent
   ],
   imports: [
     BrowserModule,
