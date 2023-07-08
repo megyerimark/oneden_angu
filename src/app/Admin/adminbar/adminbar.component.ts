@@ -10,8 +10,16 @@ import { AuthService } from 'src/app/Shared/Admin/auth.service';
 export class AdminbarComponent implements OnInit{
   constructor(private admin:AuthService, private router : Router){}
   ngOnInit(): void {
-
+    this.isLoggedIn();
   }
+
+  adminName:any;
+  isLoggedIn(){
+    let jsonCurrentUser: any = localStorage.getItem("currentAdmin");
+    let currentUser = JSON.parse(jsonCurrentUser);
+    this.adminName = currentUser.name;
+
+    }
 
   logout(){
     let jsonCurrentUser: any = localStorage.getItem("currentAdmin");
