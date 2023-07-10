@@ -1,5 +1,5 @@
 
-.container
+.holder
 {
   width: 100%;
   display: flex;
@@ -7,9 +7,10 @@
   align-items: center;
   justify-content: space-around;
   height: 200px;
+  background-color: #3076dfcf;
 }
 
 a{
-  color: #4981d4;
+  color: #ffffff;
   font-weight: 600;
 }
